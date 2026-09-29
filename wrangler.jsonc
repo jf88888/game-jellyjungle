@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Cloudflare Worker serving the built Vite output as static assets.
+  // Deploy with: npm run deploy   (builds dist/ then `wrangler deploy`)
+  // Local preview: npm run cf:dev (serves dist/ at http://localhost:8787)
+  "name": "jelly-jungle",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
