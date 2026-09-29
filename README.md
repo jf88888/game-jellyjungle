@@ -135,7 +135,7 @@ This game was designed and coded by **Quantumflare** (<https://quantumflare.ai>)
 
 | Setting | Value |
 |---|---|
-| Context length | 1,350,000 tokens |
+| Context length | ~128K tokens |
 | KV cache dtype | `q8_0` |
 | Speculative decoding | MTP (multi-token prediction) |
 | VRAM budget | 95% — capped so it won't crash other running applications |
