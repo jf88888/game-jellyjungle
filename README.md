@@ -120,7 +120,30 @@ Suggested next prompts:
 - [x] Prompt popup renders the full brief (table, links, code) + copy-to-clipboard
 - [x] Cloudflare Worker deploy boots clean on the edge (zero console errors)
 
+## Built with
+
+This game was designed and coded by **Quantumflare** (<https://quantumflare.ai>) on a local LLM inference stack — no cloud API calls:
+
+| Component | Detail |
+|---|---|
+| Coding harness | [Pi](https://pi.dev) (coding hardness: PI) |
+| Inference engine | [Unsloth](https://unsloth.ai/download/windows) — GGUF runtime |
+| Model | `Qwen3.8-27B-GGUF` · quant `UD-Q4_K_XL` |
+| GPU | NVIDIA RTX 5090 |
+
+### Inference settings
+
+| Setting | Value |
+|---|---|
+| Context length | 1,350,000 tokens |
+| KV cache dtype | `q8_0` |
+| Speculative decoding | MTP (multi-token prediction) |
+| VRAM budget | 95% — capped so it won't crash other running applications |
+| Estimated GPU memory | ≈ 25.5 GB |
+
+Get Unsloth: <https://unsloth.ai/download/windows>
+
 ## Credits
 
-- Branding & platform: [Quantumflare](https://quantumflare.ai) — built with RTX 5090 · Qwen3.8-27B
+- Branding & platform: [Quantumflare](https://quantumflare.ai) — RTX 5090 · `Qwen3.8-27B-GGUF` (UD-Q4_K_XL) via Unsloth, coded with [Pi](https://pi.dev)
 - Design brief source: [Jelly Jungle — 3D browser game · Tripo 3D Prompts](https://www.tripo3d.ai/3d-prompts/jelly-jungle-3d-browser-game-2081024333188)
