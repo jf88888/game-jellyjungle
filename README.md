@@ -2,7 +2,7 @@
 
 A third-person platformer in a soft, sculpted toy world. Guide a little pink jelly across 13 floating islands with triple jumps and spring mushrooms.
 
-**Live (temporary preview):** <https://jelly-jungle.hungry-path.workers.dev> · Permanent deploys go to `https://jelly-jungle.<your-subdomain>.workers.dev` — see [Deploy](#deploy-cloudflare-workers).
+**Play now:** <https://experimental-jelly-jungle.quantumflare.ai> — permanently hosted on Cloudflare Workers with a custom domain. See [Deploy](#deploy-cloudflare-workers).
 
 Built by **Quantumflare** (<https://quantumflare.ai>) with Vite + Three.js + vanilla JS. No game engine, no build-time assets — the whole world is procedural so it runs instantly, and every repeated model family (jelly, mushroom, tree) can be swapped for a richer AI-generated GLB without touching gameplay code.
 
@@ -77,7 +77,7 @@ npm run cf:dev     # local Worker preview at http://localhost:8787 (no auth need
 npx wrangler deploy --temporary   # instant no-auth preview URL (ephemeral — how the link above was made)
 ```
 
-Authentication for permanent deploys: `npx wrangler login` (browser OAuth) **or** set `CLOUDFLARE_API_TOKEN` (a token with *Edit Cloudflare Workers* permission). The temporary-preview URL in this file expires; re-run `npm run deploy` once authenticated to pin a permanent one.
+Authentication for permanent deploys: `npx wrangler login` (browser OAuth) **or** set `CLOUDFLARE_API_TOKEN` (a token with *Edit Cloudflare Workers* permission). The live game uses the permanent custom domain <https://experimental-jelly-jungle.quantumflare.ai>, configured in the Worker's Domains & Routes settings. Temporary deployments made with `--temporary` expire.
 
 ## Swapping in Tripo AI assets
 
