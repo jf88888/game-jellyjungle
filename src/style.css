@@ -179,6 +179,9 @@ kbd {
 }
 .prompt-btn svg { width: 14px; height: 14px; color: var(--forest); }
 .prompt-btn:hover { background: #fff; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(34,59,57,0.12); }
+#title-footer .github-link { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 36px; height: 36px; color: var(--ink); border-bottom: none; border-radius: 50%; }
+.github-link svg { width: 20px; height: 20px; }
+.github-link:hover, .github-link:focus-visible { background: rgba(255,255,255,0.7); outline: 2px solid var(--forest); outline-offset: 2px; }
 .built-with { font-size: 0.68rem; letter-spacing: 0.02em; color: rgba(34,59,57,0.62); white-space: nowrap; }
 .built-with strong { color: var(--ink); font-weight: 700; }
 
